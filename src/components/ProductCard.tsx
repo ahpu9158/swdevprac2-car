@@ -19,6 +19,7 @@ export default function ProductCard({carName, imgSrc,onCompare}
                                 hover:bg-indigo-600 mx-2 px-1 py-1
                                 text-white shadow-sm'
                     onClick={(e)=>{ e.stopPropagation();
+                                    e.preventDefault();
                                     onCompare(carName);
                     }}
             >
